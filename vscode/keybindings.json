@@ -1,0 +1,21 @@
+// Placez vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+    {
+        "key": "shift+alt+cmd+[Period]",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+[Period]",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    }
+]

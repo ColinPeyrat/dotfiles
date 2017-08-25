@@ -1,0 +1,26 @@
+{
+    // _general
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": true,
+    "editor.snippetSuggestions": "top",
+    // _prettier
+    "prettier.singleQuote": true,
+    "editor.formatOnSave": true,
+    "prettier.jsonEnable": [],
+    // _fonts
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Material",
+    "emmet.includeLanguages": {
+        "php": "html",
+        "twig": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "[scss]": {
+        "editor.quickSuggestions": false
+    },
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
+}
