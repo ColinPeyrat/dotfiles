@@ -4,7 +4,7 @@
 Run this:
 
 ```bash
-git clone https://github.com/mattbanks/dotfiles.git ~/.dotfiles
+git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 ```
 
 ## vscode
