@@ -1,6 +1,6 @@
 # dotfiles
 
-## Install
+## install
 Run this:
 
 ```bash
@@ -9,7 +9,7 @@ git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 
 ## vscode
 
-### Enable synchronization 
+### enable synchronization 
 
 ```shell
 rm -rf ~/Library/Application\ Support/Code/User
@@ -18,7 +18,7 @@ ln -s ~/.dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/Us
 ln -s ~/.dotfiles/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
-### Installed plugins
+### installed plugins
 
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [Can I Use](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-caniuse)
