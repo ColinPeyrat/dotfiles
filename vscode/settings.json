@@ -12,7 +12,7 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Material",
+    "workbench.colorTheme": "Nord",
     "emmet.includeLanguages": {
         "php": "html",
         "twig": "html"
@@ -21,6 +21,8 @@
     "[scss]": {
         "editor.quickSuggestions": false
     },
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
     "git.enableSmartCommit": true,
     "git.confirmSync": false
 }

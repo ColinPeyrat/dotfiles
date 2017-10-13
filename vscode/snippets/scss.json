@@ -31,5 +31,19 @@
 			"}"
 		],
 		"description": "Media query lower"
+	},
+	"Basic transition": {
+		"prefix": "trsb",
+		"body": [
+			"transition: ${1:transform} ${2:0.8s} ${3:$$easeOutQuart};"
+		],
+		"description": "Basic transition"
+	},
+	"Double transition": {
+		"prefix": "trsd",
+		"body": [
+			"transition: ${1:transform} ${2:0.8s} ${3:$$easeOutQuart}, ${4:opacity} ${2:0.8s} ${3:$$easeOutQuart};"
+		],
+		"description": "Double transition"
 	}
 }

@@ -35,45 +35,72 @@
 	"this": {
 		"prefix": "t",
 		"body": [
-			"this.${1:prop};",
-			"$2"
+			"this.${1:prop}"
 		],
 		"description": "this"
 	},
 	/* GSAP */
-	"TweenLite": {
+	"TweenMax": {
 		"prefix": "tw",
 		"body": [
-			"TweenLite"
+			"TweenMax"
 		],
-		"description": "TweenLite"
+		"description": "TweenMax"
 	},
-	"TweenLite from": {
+	"TimelineMax": {
+		"prefix": "tl",
+		"body": [
+			"TimelineMax"
+		],
+		"description": "TimelineMax"
+	},
+	"TweenMax from": {
 		"prefix": "twf",
 		"body": [
-			"TweenLite.from(${1:element}, ${2:duration}, {${3:vars}});"
+			"TweenMax.from(${1:element}, ${2:duration}, {${3:vars}});"
 		],
-		"description": "TweenLite from"
+		"description": "TweenMax from"
 	},
-	"TweenLite to": {
+	"TweenMax to": {
 		"prefix": "twt",
 		"body": [
-			"TweenLite.to(${1:element}, ${2:duration}, {${3:vars}});"
+			"TweenMax.to(${1:element}, ${2:duration}, {${3:vars}});"
 		],
-		"description": "TweenLite to"
+		"description": "TweenMax to"
 	},
-	"TweenLite fromTo": {
+	"TweenMax fromTo": {
 		"prefix": "twft",
 		"body": [
-			"TweenLite.fromTo(${1:element}, ${2:duration}, {${3:fromVars}}, {${4:toVars}});"
+			"TweenMax.fromTo(${1:element}, ${2:duration}, {${3:fromVars}}, {${4:toVars}});"
 		],
-		"description": "TweenLite fromTo"
+		"description": "TweenMax fromTo"
 	},
-	"GSAP set": {
+	"GSAP .set": {
 		"prefix": "set",
 		"body": [
-			"set(${1:element}, {${3:vars}});"
+			"set(${1:element}, {${2:vars}});"
 		],
-		"description": "TweenLite fromTo"
+		"description": "GSAP set"
+	},
+	"GSAP .to()": {
+		"prefix": ".t",
+		"body": [
+			".to(${1:element}, ${2:duration}, {${3:vars}});"
+		],
+		"description": "GSAP .to()"
+	},
+	"GSAP .from()": {
+		"prefix": ".f",
+		"body": [
+			".from(${1:element}, ${2:duration}, {${3:vars}});"
+		],
+		"description": "GSAP .from()"
+	},
+	"GSAP .fromTo()": {
+		"prefix": ".ft",
+		"body": [
+			".fromTo(${1:element}, ${2:duration}, {${3:fromVars}}, {${4:toVars}});"
+		],
+		"description": "GSAP .fromTo()"
 	}
 }
