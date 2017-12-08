@@ -24,5 +24,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 0,
     "git.enableSmartCommit": true,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.panel.location": "bottom"
 }
