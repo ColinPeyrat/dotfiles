@@ -1,38 +1,46 @@
 # dotfiles
 
 ## install
+
 Run this:
 
 ```bash
 git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
+sh ./setup.sh
 ```
-and then create symlinks
 
 ## iterm
 
 ### install
+
 ```bash
 brew cask install iterm2
 ```
+
 follow this [link](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/) to setup iterm from custom URL
 
 ### theme
+
 i use [nord for iterm2](https://github.com/arcticicestudio/nord-iterm2)
 
 ## zsh
 
 ### install
+
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 then for plugins run:
+
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 ### theme
+
 i use [pure](https://github.com/sindresorhus/pure)
+
 ```bash
 npm install --global pure-prompt
 ```
@@ -54,20 +62,15 @@ then open vim and run this:
 :PluginInstall
 ```
 
-create needed symlinks
-```bash
-cd
-ln -s ~/.dotfiles/vim/UltiSnips/ ~/.vim/UltiSnips
-etc.
-```
-
 because i use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) you need to run this:
+
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --tern-completer
 ```
 
 finally, you will need to setup tern
+
 ```bash
 cd ~/.vim/bundle/tern_for_vim
 npm install
