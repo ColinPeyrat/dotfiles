@@ -6,22 +6,39 @@ Run this:
 ```bash
 git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 ```
+and then create symlinks
 
-## vscode
+## iterm
 
-### enable synchronization 
+### theme
+i use [nord theme]https://github.com/arcticicestudio/nord-iterm2
 
-```shell
-rm -rf ~/Library/Application\ Support/Code/User
-ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/.dotfiles/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
+## zsh
+
+### theme
+i use [pure](https://github.com/sindresorhus/pure)
+```bash
+npm install --global pure-prompt
 ```
 
-### installed plugins
+## vim
 
-* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-* [Can I Use](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-caniuse)
-* [Material Theme Kit](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Theme-MaterialKit)
-* [Prettier - JavaScript formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Twig](https://marketplace.visualstudio.com/items?itemName=whatwedo.twig)
+i use macvim
+
+```bash
+brew install vim
+brew install macvim --with-override-system-vim
+```
+
+then open vim and run this:
+
+```bash
+:source %
+:PluginInstall
+```
+
+finally, because i use [YouCompleteMe]https://github.com/Valloric/YouCompleteMe, you need to run this:
+```bash
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --all
+```
