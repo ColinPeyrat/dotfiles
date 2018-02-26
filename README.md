@@ -26,6 +26,11 @@ i use [nord for iterm2](https://github.com/arcticicestudio/nord-iterm2)
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+then for plugins run:
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
 ### theme
 i use [pure](https://github.com/sindresorhus/pure)
 ```bash
