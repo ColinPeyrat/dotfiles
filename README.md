@@ -9,6 +9,9 @@ git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 and then create symlinks
 
 ## iterm
+### install
+
+follow this [link](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/) to setup iterm from custom URL
 
 ### theme
 i use [nord for iterm2](https://github.com/arcticicestudio/nord-iterm2)
@@ -37,7 +40,7 @@ then open vim and run this:
 :PluginInstall
 ```
 
-finally, because i use [YouCompleteMe]https://github.com/Valloric/YouCompleteMe you need to run this:
+finally, because i use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) you need to run this:
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
