@@ -9,14 +9,22 @@ git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 and then create symlinks
 
 ## iterm
-### install
 
+### install
+```bash
+brew cask install iterm2
+```
 follow this [link](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/) to setup iterm from custom URL
 
 ### theme
 i use [nord for iterm2](https://github.com/arcticicestudio/nord-iterm2)
 
 ## zsh
+
+### install
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ### theme
 i use [pure](https://github.com/sindresorhus/pure)
