@@ -54,6 +54,13 @@ then open vim and run this:
 :PluginInstall
 ```
 
+create needed symlinks
+```bash
+cd
+ln -s ~/.dotfiles/vim/UltiSnips/ ~/.vim/UltiSnips
+etc.
+```
+
 because i use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) you need to run this:
 ```bash
 cd ~/.vim/bundle/YouCompleteMe

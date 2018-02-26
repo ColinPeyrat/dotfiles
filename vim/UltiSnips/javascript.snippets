@@ -1,0 +1,21 @@
+snippet cl "console.log" b
+console.log($0);
+endsnippet
+
+# DOM
+
+snippet qs "querySelector" b
+${1:document}.querySelector('${2:selector}')
+endsnippet
+
+snippet qsa "querySelectorAll" b
+${1:document}.querySelectorAll('${2:selector}')
+endsnippet
+
+# Function
+
+snippet fn "function" b
+function ${1:name} (${2}) {
+	${3}
+}
+endsnippet

@@ -16,7 +16,6 @@ Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 
 " integration
 Plugin 'w0rp/ale'
@@ -133,9 +132,12 @@ let g:ale_javascript_prettier_options = '--single-quote'
 let g:ycm_autoclose_preview_window_after_completion=1
 
 " UltiSnips
+let g:UltiSnipsSnippetsDir = "~/.dotfiles/vim/UltiSnips/"
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+let g:UltiSnipsEditSplit="vertical"
+
 
 " Emmet
 let g:user_emmet_install_global = 0
