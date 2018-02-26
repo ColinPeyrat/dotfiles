@@ -11,7 +11,7 @@ and then create symlinks
 ## iterm
 
 ### theme
-i use [nord theme]https://github.com/arcticicestudio/nord-iterm2
+i use [nord]https://github.com/arcticicestudio/nord-iterm2
 
 ## zsh
 
