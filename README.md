@@ -37,7 +37,7 @@ then open vim and run this:
 :PluginInstall
 ```
 
-finally, because i use [YouCompleteMe]https://github.com/Valloric/YouCompleteMe, you need to run this:
+finally, because i use [YouCompleteMe]https://github.com/Valloric/YouCompleteMe you need to run this:
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
