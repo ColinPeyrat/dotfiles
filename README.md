@@ -57,7 +57,7 @@ then open vim and run this:
 finally, because i use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) you need to run this:
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --all
+./install.py --tern-completer
 ```
 
 you will also want to configure tern for specific project. Follow this [link](https://stackoverflow.com/questions/41371789/figuring-out-javascript-libraries-for-vim-autocompletion-with-ternjs-in-tern-pr/41377689#41377689)
