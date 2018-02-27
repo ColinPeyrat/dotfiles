@@ -14,6 +14,10 @@ snippet qsa "querySelectorAll" b
 ${1:document}.querySelectorAll('${2:selector}')
 endsnippet
 
+snippet ae "addEventListener" b
+${1:document}.addEventListener('${2:event}', ${3:function})
+endsnippet
+
 # Flow
 
 snippet if "if" b
@@ -24,18 +28,40 @@ endsnippet
 
 # Function
 
-snippet fn "function" b
+snippet fn "function" w
 function ${1:name} (${2}) {
 	${3}
 }
 endsnippet
 
-snippet afn "anonymous function" b
+snippet afn "anonymous function" i
 function (${2}) {
 	${3}
 }
 endsnippet
 
+snippet afb "arrow function (body)" i
+(${1}) => {
+  ${2}
+}
+endsnippet
+
+snippet afe "arrow function (expression)" i
+(${1}) => ${2}
+endsnippet
+# Class
+
+snippet cla "class definition" b
+class ${1} {
+  ${0}
+}
+endsnippet
+
+snippet clex "class definition with extends" b
+class ${1} extends ${2} {
+  ${0}
+}
+endsnippet
 # Module
 
 snippet imp "imp" b
@@ -62,5 +88,5 @@ endsnippet
 
 snippet me "module.exports" b
 module.exports = ${1:`!p 
-snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
+snip.rv = ''.join(x for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
 endsnippet

@@ -26,8 +26,6 @@ Plugin 'pangloss/vim-javascript'
 
 " interface
 Plugin 'kien/ctrlp.vim'
-" Plugin 'bling/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
 
 " theme
 Plugin 'arcticicestudio/nord-vim'
@@ -42,9 +40,6 @@ call vundle#end()
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Map leader to ,
-let mapleader=','
-
 
 " Syntax highlighting
 
@@ -56,7 +51,6 @@ syntax enable
 set showmatch
 " Nord colour scheme...
 colorscheme nord
-
 
 
 " Text management
@@ -79,6 +73,7 @@ set nojoinspaces
 set nrformats-=octal
 " Auto-format comments
 set formatoptions+=jroqn1
+set clipboard=unnamed
 
 
 " Splits
@@ -89,6 +84,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
 
 " Visual decorations
 
@@ -109,9 +105,12 @@ set title
 " Absolute numbers on the current line (hybrid numbering)
 set number
 
+" netwr
+" let g:netrw_rmf_cmd = 'ssh HOSTNAME rm -rf'
+" let g:netrw_liststyle = 3
 
 " CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|www\|dist'
 
 " Airline
 let g:airline_theme="solarized"
@@ -141,10 +140,13 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Emmet
 let g:user_emmet_install_global = 0
-autocmd FileType html,css  EmmetInstall
-autocmd FileType html,css imap <TAB> <plug>(emmet-expand-abbr)
+autocmd FileType html,css,scss EmmetInstall
+autocmd FileType html,css,scss imap <TAB> <plug>(emmet-expand-abbr)
 
 " Key mappings
+
+" Map leader to ,
+let mapleader=','
 
 " Disable arrow keys (hardcore)
 map  <Up>    <Nop>
@@ -159,3 +161,6 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
+
+noremap <leader>c "_c 
+noremap <leader>d "_d
