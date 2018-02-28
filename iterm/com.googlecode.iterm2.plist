@@ -373,9 +373,15 @@
 	<string>Single</string>
 	<key>Default Bookmark Guid</key>
 	<string>8C7FF288-F6EE-467D-8611-0DCFDB6B9900</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<true/>
+	<false/>
+	<key>DimOnlyText</key>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>EnableProxyIcon</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
 	<true/>
@@ -484,6 +490,8 @@
 	<false/>
 	<key>HideScrollbar</key>
 	<false/>
+	<key>HideTab</key>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -547,11 +555,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1537 110 445 103 0 0 2048 1129 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>545 515 918 394 0 0 2048 1129 </string>
+	<string>545 638 796 473 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 2048 1125 0 0 2048 1129 </string>
+	<string>0 0 2048 1129 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>519 255 1010 622 0 0 2048 1129 </string>
+	<string>0 23 2048 1106 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>519 253 1010 622 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -733,6 +741,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blend</key>
+			<real>0.51631735777243593</real>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -2081,12 +2091,20 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>EE8E76E4-BD4E-4CD7-93EB-030848460105</string>
+	<key>NoSyncLastTipTime</key>
+	<real>541508231.29631197</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>541333151.33775997</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
@@ -2137,8 +2155,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-27T10:38:56Z</date>
+	<date>2018-02-28T10:38:56Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
@@ -2147,7 +2167,9 @@
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.35194811698717943</real>
+	<real>0.37521534455128203</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchPaneModifier</key>
 	<integer>9</integer>
 	<key>UseBorder</key>
