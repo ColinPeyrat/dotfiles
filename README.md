@@ -21,7 +21,7 @@ follow this [link](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with
 
 ### theme
 
-i use [nord for iterm2](https://github.com/arcticicestudio/nord-iterm2)
+i use [Tomorrow Night](https://github.com/martinlindhe/base16-iterm2) from [Base16](https://github.com/chriskempson/base16)
 
 ## zsh
 
