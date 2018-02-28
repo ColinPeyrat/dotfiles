@@ -73,7 +73,6 @@ set nojoinspaces
 set nrformats-=octal
 " Auto-format comments
 set formatoptions+=jroqn1
-set clipboard=unnamed
 
 
 " Splits
@@ -104,10 +103,9 @@ set statusline=%f\ %=Line\ %l/%L\ Col\ %c\ (%p%%)
 set title
 " Absolute numbers on the current line (hybrid numbering)
 set number
+" don't bother updating screen during macro playback
+set lazyredraw                        
 
-" netwr
-" let g:netrw_rmf_cmd = 'ssh HOSTNAME rm -rf'
-" let g:netrw_liststyle = 3
 
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|www\|dist'
@@ -145,9 +143,6 @@ autocmd FileType html,css,scss imap <TAB> <plug>(emmet-expand-abbr)
 
 " Key mappings
 
-" Map leader to ,
-let mapleader=','
-
 " Disable arrow keys (hardcore)
 map  <Up>    <Nop>
 imap <Up>    <Nop>
@@ -162,5 +157,10 @@ nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 
-noremap <leader>c "_c 
-noremap <leader>d "_d
+" Map leader to ,
+let mapleader=','
+
+nnoremap <Leader>o :on<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>x :x<CR>
