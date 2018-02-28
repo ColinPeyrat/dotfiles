@@ -110,11 +110,6 @@ set lazyredraw
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|www\|dist'
 
-" Airline
-let g:airline_theme="solarized"
-let g:airline_solarized_bg='dark'
-let g:airline_detect_spell=0
-
 " ALE config
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
