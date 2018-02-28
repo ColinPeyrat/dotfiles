@@ -29,8 +29,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
 
 " theme
-Plugin 'arcticicestudio/nord-vim'
-
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 
@@ -50,9 +49,9 @@ filetype plugin on
 syntax enable
 " Show matching parens, brackets, etc.
 set showmatch
-" Nord colour scheme...
-colorscheme nord
 
+set background=dark
+color base16-tomorrow-night
 
 " Text management
 
@@ -67,8 +66,6 @@ set softtabstop=2
 set shiftround
 " No line-wrapping
 set nowrap
-" Underscores denote words
-set iskeyword-=_
 " No extra spaces when joining lines
 set nojoinspaces
 " Interpret numbers with leading zeroes as decimal, not octal
