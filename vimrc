@@ -20,6 +20,7 @@ Plugin 'SirVer/ultisnips'
 " integration
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-commentary'
+Plugin 'lumiliet/vim-twig'
 
 " language
 Plugin 'pangloss/vim-javascript'
@@ -56,6 +57,7 @@ colorscheme nord
 " Text management
 
 filetype plugin indent on
+
 " 2 spaces please
 set expandtab
 set shiftwidth=2
@@ -74,10 +76,21 @@ set nrformats-=octal
 " Auto-format comments
 set formatoptions+=jroqn1
 
+" Search
+
+" Find the next match as we type the search
+set incsearch
+" Highlight searches by default
+set hlsearch
+" Ignore case when searching...
+set ignorecase
+" ...unless we type a capital
+set smartcase
 
 " Splits
 set splitbelow
 set splitright
+
 " Easier split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -108,12 +121,16 @@ set lazyredraw
 
 
 " CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|www\|dist'
+let g:ctrlp_custom_ignore = {
+      \ 'dir':'\v[\/](node_modules|www|vendor)|(\.(git))$',
+      \ 'file': '\v\.(DS_Store)$',
+      \ }
+let g:ctrlp_show_hidden = 1
 
 " ALE config
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\}
+      \   'javascript': ['prettier'],
+      \}
 
 let g:ale_fix_on_save = 1
 
@@ -152,6 +169,11 @@ nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 
+" Make 0 go to the first character rather than the beginning
+" of the line.
+nnoremap 0 ^
+nnoremap ^ 0
+
 " Map leader to ,
 let mapleader=','
 
@@ -159,3 +181,6 @@ nnoremap <Leader>o :on<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
+
+" Disable highlight when <leader><cr> is pressed
+map <silent> <Leader><Space> :nohlsearch<cr>
