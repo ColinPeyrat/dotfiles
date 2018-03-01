@@ -17,7 +17,7 @@ rm -rf ~/.vim/UltiSnips
 rm -rf ~/.vimrc
 rm -rf ~/.tern-config
 
-# Create neded folder
+# Create needed folder
 
 create_folder ~/.oh-my-zsh/custom
 create_folder ~/.vim
