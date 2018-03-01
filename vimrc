@@ -50,6 +50,8 @@ syntax enable
 " Show matching parens, brackets, etc.
 set showmatch
 
+set termguicolors                   " use guifg/guibg instead of ctermfg/ctermbg in terminal
+let g:base16colorspace=256
 set background=dark
 color base16-tomorrow-night
 
@@ -57,6 +59,7 @@ color base16-tomorrow-night
 
 filetype plugin indent on
 
+set cursorline " highlight current line
 " 2 spaces please
 set expandtab
 set shiftwidth=2
@@ -64,6 +67,8 @@ set tabstop=2
 set softtabstop=2
 " Round indent to nearest multiple of 2
 set shiftround
+" start scrolling 3 lines before edge of viewport
+set scrolloff=3
 " No line-wrapping
 set nowrap
 " No extra spaces when joining lines
@@ -135,7 +140,12 @@ let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--single-quote'
 
 " YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_completion = 1
+" Hide YCM's preview window because of bug while expanding snippets
+" waiting for this pull request to be merged 
+" https://github.com/SirVer/ultisnips/pull/845
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir = "~/.dotfiles/vim/UltiSnips/"
