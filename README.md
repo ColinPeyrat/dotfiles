@@ -5,7 +5,7 @@
 Run this:
 
 ```bash
-git clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
+git clone --clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
 sh ./setup.sh
 ```
 
@@ -28,13 +28,8 @@ i use [Tomorrow Night](https://github.com/martinlindhe/base16-iterm2) from [Base
 ### install
 
 ```bash
+brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-then for plugins run:
-
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 ### theme
