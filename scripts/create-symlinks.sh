@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This symlinks all the dotfile
+
+
 function create_folder() {
   if [[ ! -e $1 ]]; then
     mkdir -p $1
