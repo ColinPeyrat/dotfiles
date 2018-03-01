@@ -14,6 +14,7 @@ function create_folder() {
 rm -rf ~/.oh-my-zsh/custom/plugins
 rm -rf ~/.zshrc
 rm -rf ~/.vim/UltiSnips
+rm -rf ~/.vim/bundle/Vundle.vim
 rm -rf ~/.vimrc
 rm -rf ~/.tern-config
 
@@ -21,12 +22,14 @@ rm -rf ~/.tern-config
 
 create_folder ~/.oh-my-zsh/custom
 create_folder ~/.vim
+create_folder ~/.vim/bundle/
 
 # Creating symlinks
 
 ln -s ~/.dotfiles/zsh/plugins ~/.oh-my-zsh/custom/plugins
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/vim/UltiSnips ~/.vim/UltiSnips
+ln -s ~/.dotfiles/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tern-config ~/.tern-config
 

@@ -47,7 +47,6 @@ i use macvim
 ```bash
 brew install vim
 brew install macvim --with-override-system-vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 then open vim and run this:
