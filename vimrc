@@ -24,6 +24,7 @@ Plugin 'lumiliet/vim-twig'
 
 " language
 Plugin 'pangloss/vim-javascript'
+Plugin 'tikhomirov/vim-glsl'
 
 " interface
 Plugin 'kien/ctrlp.vim'
