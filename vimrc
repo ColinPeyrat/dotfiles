@@ -79,6 +79,11 @@ set nrformats-=octal
 " Auto-format comments
 set formatoptions+=jroqn1
 
+" filebrowser
+let g:netrw_banner = 0 " disable_banner in filebrowser
+let g:netrw_liststyle = 3 " enable tree view in filebrowser
+
+
 " Folding
 
 set foldmethod=indent               " not as cool as syntax, but faster
