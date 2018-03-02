@@ -78,6 +78,11 @@ set nrformats-=octal
 " Auto-format comments
 set formatoptions+=jroqn1
 
+" Folding
+
+set foldmethod=indent               " not as cool as syntax, but faster
+
+
 " Search
 
 " Find the next match as we type the search
