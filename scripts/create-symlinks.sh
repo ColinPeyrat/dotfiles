@@ -11,7 +11,6 @@ function create_folder() {
 
 # Remove old dot flies
 
-rm -rf ~/.oh-my-zsh/custom/
 rm -rf ~/.zshrc
 rm -rf ~/.vim/UltiSnips
 rm -rf ~/.vim/bundle/Vundle.vim
@@ -25,7 +24,7 @@ create_folder ~/.vim/bundle/
 
 # Creating symlinks
 
-ln -s ~/.dotfiles/zsh/custom ~/.oh-my-zsh
+ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/vim/UltiSnips ~/.vim/UltiSnips
 ln -s ~/.dotfiles/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
