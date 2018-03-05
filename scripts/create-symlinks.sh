@@ -11,25 +11,26 @@ function create_folder() {
 
 # Remove old dot flies
 
-rm -rf ~/.zshrc
-rm -rf ~/.vim/UltiSnips
-rm -rf ~/.vim/bundle/Vundle.vim
+# rm -rf ~/.vim/UltiSnips
+# rm -rf ~/.vim/bundle/Vundle.vim
 rm -rf ~/.vimrc
 rm -rf ~/.tern-config
 
 # Create needed folder
 
-create_folder ~/.vim
-create_folder ~/.vim/bundle/
+# TODO: If folder .vim exist move it  
+# create_folder ~/.vim
+# create_folder ~/.vim/bundle/
 
 # Creating symlinks
 
 ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-ln -s ~/.dotfiles/vim/UltiSnips ~/.vim/UltiSnips
-ln -s ~/.dotfiles/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-ln -s ~/.dotfiles/tern-config ~/.tern-config
+ln -sf ~/.dotfiles/.zshrc ~
+ln -sf ~/.dotfiles/.vim ~
+# ln -s ~/.dotfiles/vim/UltiSnips ~/.vim/UltiSnips
+# ln -s ~/.dotfiles/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
+ln -sf ~/.dotfiles/.vimrc ~
+ln -sf ~/.dotfiles/.tern-config ~
 
 echo "Symlinks created"
 

@@ -80,8 +80,7 @@ set nrformats-=octal
 set formatoptions+=jroqn1
 
 " filebrowser
-let g:netrw_banner = 0 " disable_banner in filebrowser
-let g:netrw_liststyle = 3 " enable tree view in filebrowser
+let g:netrw_banner=0 " disable_banner in filebrowser
 
 
 " Folding

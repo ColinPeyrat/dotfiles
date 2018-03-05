@@ -1,9 +1,6 @@
-[submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "zsh/custom/plugins/zsh/custom/plugins/zsh-autosuggestions"]
-	path = zsh/custom/plugins/zsh/custom/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "zsh/custom/plugins/zsh-autosuggestions"]
 	path = zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
