@@ -561,11 +561,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>562 304 1016 512 0 0 1920 1177 </string>
+	<string>1063 346 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>455 280 1010 621 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>455 279 1010 621 0 0 1920 1177 </string>
+	<string>3 28 1274 1149 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 4 1920 1173 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2088,7 +2088,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>53F32B75-66E1-4E3B-9366-C8284838DBBE</string>
 	<key>NoSyncLastTipTime</key>
-	<real>541545613.05555606</real>
+	<real>541848759.11083305</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2109,6 +2109,8 @@
 		<string>0006</string>
 		<string>0007</string>
 		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -2164,7 +2166,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-28T21:43:57Z</date>
+	<date>2018-03-04T12:05:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2181,6 +2183,8 @@
 	<true/>
 	<key>SwitchPaneModifier</key>
 	<integer>9</integer>
+	<key>TabStyle</key>
+	<integer>0</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>Window Arrangements</key>
