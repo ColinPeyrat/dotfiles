@@ -9,26 +9,27 @@ function create_folder() {
   fi
 }
 
-# Remove old dot flies
-
-# rm -rf ~/.vim/UltiSnips
-# rm -rf ~/.vim/bundle/Vundle.vim
-rm -rf ~/.vimrc
-rm -rf ~/.tern-config
+function backup_dotfiles() {
+  if [[ -d $1 ]]; then
+    echo "$1 is a folder"
+    mv $1 ~/.backups/
+  fi
+}
 
 # Create needed folder
 
-# TODO: If folder .vim exist move it  
-# create_folder ~/.vim
-# create_folder ~/.vim/bundle/
+create_folder ~/.backups
+
+# Backup old dotfiles 
+
+backup_dotfiles ~/.vim
+
 
 # Creating symlinks
 
 ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
 ln -sf ~/.dotfiles/.zshrc ~
 ln -sf ~/.dotfiles/.vim ~
-# ln -s ~/.dotfiles/vim/UltiSnips ~/.vim/UltiSnips
-# ln -s ~/.dotfiles/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tern-config ~
 
