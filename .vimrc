@@ -128,6 +128,7 @@ set statusline=%f\ %=Line\ %l/%L\ Col\ %c\ (%p%%)
 set title
 " Absolute numbers on the current line (hybrid numbering)
 set number
+set relativenumber
 " don't bother updating screen during macro playback
 set lazyredraw                        
 
