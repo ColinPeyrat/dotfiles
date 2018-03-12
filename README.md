@@ -47,6 +47,7 @@ i use neovim
 brew install neovim
 # install latest python package version
 pip install setuptools
+pip  install --upgrade neovim
 pip2 install --upgrade neovim
 pip3 install --upgrade neovim
 ```
