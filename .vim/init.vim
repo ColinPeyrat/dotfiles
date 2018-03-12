@@ -8,9 +8,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
-
 " completion
 Plugin 'valloric/youcompleteme'
 Plugin 'marijnh/tern_for_vim'
@@ -30,7 +27,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tikhomirov/vim-glsl'
 
 " interface
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " theme
 Plugin 'chriskempson/base16-vim'
