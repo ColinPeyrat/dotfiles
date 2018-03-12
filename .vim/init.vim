@@ -1,3 +1,6 @@
+" Map leader to ,
+let mapleader=','
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -35,69 +38,57 @@ Plugin 'chriskempson/base16-vim'
 call vundle#end()
 
 
-" Setup
-
 " Use UTF-8 by default
 set encoding=utf-8
 set fileencoding=utf-8
+language en_US
+
+" Automatic, language-dependent indentation, syntax coloring and other
+" functionality.
+filetype indent plugin on
+syntax on
 
 
-" Syntax highlighting
+" Colors
 
-" Detect filetype
-filetype plugin on
-" Enable syntax highighting
-syntax enable
-" Show matching parens, brackets, etc.
-set showmatch
-
-set termguicolors                   " use guifg/guibg instead of ctermfg/ctermbg in terminal
+set termguicolors " use guifg/guibg instead of ctermfg/ctermbg in terminal
 let g:base16colorspace=256
 set background=dark
 color base16-tomorrow-night
 
-" Text management
+" Settings
 
-filetype plugin indent on
-
+set autoindent " maintain indent of current line
+set backspace=indent,start,eol        " allow unrestricted backspacing in insert mode
 set cursorline " highlight current line
+set showmatch " Show matching parens, brackets, etc.
+
 " 2 spaces please
 set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-" Round indent to nearest multiple of 2
-set shiftround
-" start scrolling 3 lines before edge of viewport
-set scrolloff=3
-" No line-wrapping
-set nowrap
-" No extra spaces when joining lines
-set nojoinspaces
-" Interpret numbers with leading zeroes as decimal, not octal
-set nrformats-=octal
-" Auto-format comments
-set formatoptions+=jroqn1
+
+set shiftround " Round indent to nearest multiple of 2
+set scrolloff=3 " start scrolling 3 lines before edge of viewport
+set nowrap " No line-wrapping
+set nojoinspaces " No extra spaces when joining lines
+set nrformats-=octal " Interpret numbers with leading zeroes as decimal, not octal
+set formatoptions+=jroqn1 " Auto-format comments
+
 
 " filebrowser
 let g:netrw_banner=0 " disable_banner in filebrowser
 
 
 " Folding
-
 set foldmethod=indent               " not as cool as syntax, but faster
 
 
-" Search
-
-" Find the next match as we type the search
-set incsearch
-" Highlight searches by default
-set hlsearch
-" Ignore case when searching...
-set ignorecase
-" ...unless we type a capital
-set smartcase
+set incsearch " Find the next match as we type the search
+set hlsearch " Highlight searches by default
+set ignorecase " Ignore case when searching...
+set smartcase " ...unless we type a capital
 
 " Splits
 set splitbelow
@@ -110,27 +101,17 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 
-" Visual decorations
-
-" Show status line
-set laststatus=2
-" Show what mode you’re currently in
-set showmode
-" Show what commands you’re typing
-set showcmd
-" Allow modelines
-set modeline
-" Show current line and column position in file
-set ruler
-" Customise our current location information
-set statusline=%f\ %=Line\ %l/%L\ Col\ %c\ (%p%%)
-" Show file title in terminal tab
-set title
+set laststatus=2 " Show status line
+set showmode " Show what mode you’re currently in
+set showcmd " Show what commands you’re typing
+set modeline " Allow modelines
+set ruler " Show current line and column position in file
+set statusline=%f\ %=Line\ %l/%L\ Col\ %c\ (%p%%) " Customise our current location information
+set title " Show file title in terminal tab
 " Absolute numbers on the current line (hybrid numbering)
 set number
 set relativenumber
-" don't bother updating screen during macro playback
-set lazyredraw                        
+set lazyredraw " don't bother updating screen during macro playback
 
 
 " CtrlP
@@ -160,7 +141,7 @@ set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 
 " UltiSnips
-let g:UltiSnipsSnippetsDir = "~/.dotfiles/vim/UltiSnips/"
+let g:UltiSnipsSnippetsDir = "~/.dotfiles/.vim/UltiSnips/"
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
@@ -172,8 +153,6 @@ let g:user_emmet_expandabbr_key = '<tab>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
 autocmd FileType html,html.twig,css,scss imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
-" Key mappings
 
 " Disable arrow keys (hardcore)
 map  <Up>    <Nop>
@@ -194,13 +173,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap 0 ^
 nnoremap ^ 0
 
-" Map leader to ,
-let mapleader=','
-
 nnoremap <Leader>o :on<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
 
-" Disable highlight when <leader><cr> is pressed
-map <silent> <Leader><Space> :nohlsearch<cr>
+" Disable highlight when <Leader><Space> is pressed
+map <silent> <Leader><Space> :nohlsearch<CR>

@@ -95,6 +95,4 @@ prompt pure
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# aliases
-alias vim='mvim -v'
 

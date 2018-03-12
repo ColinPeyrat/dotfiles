@@ -23,13 +23,14 @@ create_folder ~/.backups
 
 backup_dotfiles ~/.vim
 backup_dotfiles ~/.oh-my-zsh/custom
-
+backup_dotfiles ~/.config/nvim
 
 # Creating symlinks
 
 ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
 ln -sf ~/.dotfiles/.zshrc ~
 ln -sf ~/.dotfiles/.vim ~
+ln -sf ~/.dotfiles/.vim ~/.config/nvim
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tern-config ~
 

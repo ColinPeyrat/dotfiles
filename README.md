@@ -41,11 +41,14 @@ npm install --global pure-prompt
 
 ## vim
 
-i use macvim
+i use neovim
 
 ```bash
-brew install vim
-brew install macvim --with-override-system-vim
+brew install neovim
+# install latest python package version
+pip install setuptools
+pip2 install --upgrade neovim
+pip3 install --upgrade neovim
 ```
 
 then open vim and run this:
