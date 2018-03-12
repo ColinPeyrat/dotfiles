@@ -2,7 +2,6 @@
 
 # This symlinks all the dotfile
 
-
 function create_folder() {
   if [[ ! -e $1 ]]; then
     mkdir -p $1
@@ -10,8 +9,8 @@ function create_folder() {
 }
 
 function backup_dotfiles() {
-  if [[ -d $1 ]]; then
-    echo "$1 is a folder"
+  # Verify if it's not a symlink to a directory
+  if [[ ! -L "$1" && -d $1 ]]; then
     mv $1 ~/.backups/
   fi
 }
@@ -23,6 +22,7 @@ create_folder ~/.backups
 # Backup old dotfiles 
 
 backup_dotfiles ~/.vim
+backup_dotfiles ~/.oh-my-zsh/custom
 
 
 # Creating symlinks

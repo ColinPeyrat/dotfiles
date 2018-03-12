@@ -29,7 +29,6 @@ i use [Tomorrow Night](https://github.com/martinlindhe/base16-iterm2) from [Base
 
 ```bash
 brew install zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 ### theme
