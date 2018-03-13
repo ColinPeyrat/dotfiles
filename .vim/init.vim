@@ -85,6 +85,8 @@ let g:netrw_banner=0 " disable_banner in filebrowser
 
 " Folding
 set foldmethod=indent               " not as cool as syntax, but faster
+set foldlevelstart=99               " start unfolded
+
 
 
 set incsearch " Find the next match as we type the search
