@@ -28,6 +28,8 @@ Plugin 'lumiliet/vim-twig'
 " language
 Plugin 'pangloss/vim-javascript'
 Plugin 'tikhomirov/vim-glsl'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'hail2u/vim-css3-syntax'
 
 " interface
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -136,17 +138,6 @@ let g:ale_javascript_prettier_options = '--single-quote'
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" YouCompleteMe
-" let g:ycm_autoclose_preview_window_after_completion = 1
-" Hide YCM's preview window because of bug while expanding snippets
-" waiting for this pull request to be merged 
-" https://github.com/SirVer/ultisnips/pull/845
-" set completeopt-=preview
-" let g:ycm_add_preview_to_completeopt = 0
-" let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-" let g:ycm_key_list_accept_completion = ['<C-y>']
-
 " UltiSnips
 let g:UltiSnipsSnippetsDir = "~/.dotfiles/.vim/UltiSnips/"
 let g:UltiSnipsExpandTrigger = '<C-j>'
@@ -157,21 +148,21 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsMappingsToIgnore = ['autocomplete']
 
 " Emmet
-let g:user_emmet_expandabbr_key = '<tab>'
+let g:user_emmet_expandabbr_key = '<Tab>'
+let g:user_emmet_leader_key='<C-e>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
-" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-" autocmd FileType html,html.twig,css,scss imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Disable arrow keys (hardcore)
-map  <Up>    <Nop>
-imap <Up>    <Nop>
-map  <Down>  <Nop>
-imap <Down>  <Nop>
-map  <Left>  <Nop>
-imap <Left>  <Nop>
-map  <Right> <Nop>
-imap <Right> <Nop>
+inoremap <Up>    <Nop>
+inoremap <Down>  <Nop>
+inoremap <Left>  <Nop>
+inoremap <Right> <Nop>
+
+nnoremap <Up>    <Nop>
+nnoremap <Down>  <Nop>
+nnoremap <Left>  <Nop>
+nnoremap <Right> <Nop>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Left> :echoe "Use h"<CR>
@@ -189,3 +180,6 @@ nnoremap <Leader>x :x<CR>
 
 " Disable highlight when <Leader><Space> is pressed
 map <silent> <Leader><Space> :nohlsearch<CR>
+
+" Avoid scrolling extra lines with emmet
+nnoremap <C-e> <nop>
