@@ -7,8 +7,12 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
 " completion
-Plugin 'valloric/youcompleteme'
+Plugin 'shougo/deoplete.nvim'
+Plugin 'carlitux/deoplete-ternjs'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'alvan/vim-closetag'
@@ -124,17 +128,21 @@ let g:ale_fixers = {
       \}
 
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
 
 " prettier configuration
 let g:ale_javascript_prettier_options = '--single-quote'
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
 " YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
 " Hide YCM's preview window because of bug while expanding snippets
 " waiting for this pull request to be merged 
 " https://github.com/SirVer/ultisnips/pull/845
-set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
+" set completeopt-=preview
+" let g:ycm_add_preview_to_completeopt = 0
 " let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 " let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 " let g:ycm_key_list_accept_completion = ['<C-y>']
@@ -152,6 +160,7 @@ let g:UltiSnipsMappingsToIgnore = ['autocomplete']
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
+" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " autocmd FileType html,html.twig,css,scss imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Disable arrow keys (hardcore)

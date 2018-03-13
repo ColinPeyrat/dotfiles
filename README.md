@@ -45,6 +45,7 @@ i use neovim
 
 ```bash
 brew install neovim
+
 # install latest python package version
 pip install setuptools
 pip  install --upgrade neovim
@@ -59,11 +60,10 @@ then open vim and run this:
 :PluginInstall
 ```
 
-because i use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) you need to run this:
+with [deoplete-ternjs](https://github.com/carlitux/deoplete-ternjs) you need to install tern globally
 
 ```bash
-cd ~/.vim/bundle/YouCompleteMe
-./install.py --tern-completer
+npm install -g tern
 ```
 
 finally, you will need to setup tern
