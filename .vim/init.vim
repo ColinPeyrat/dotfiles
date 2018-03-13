@@ -1,4 +1,3 @@
-" Map leader to ,
 let mapleader=','
 
 set nocompatible              " be iMproved, required
@@ -136,6 +135,9 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " https://github.com/SirVer/ultisnips/pull/845
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
+" let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+" let g:ycm_key_list_accept_completion = ['<C-y>']
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir = "~/.dotfiles/.vim/UltiSnips/"
@@ -143,13 +145,14 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 let g:UltiSnipsEditSplit="vertical"
-
+" Prevent UltiSnips from removing our carefully-crafted mappings.
+let g:UltiSnipsMappingsToIgnore = ['autocomplete']
 
 " Emmet
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
-autocmd FileType html,html.twig,css,scss imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+" autocmd FileType html,html.twig,css,scss imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Disable arrow keys (hardcore)
 map  <Up>    <Nop>
