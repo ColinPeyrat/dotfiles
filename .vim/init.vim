@@ -1,4 +1,4 @@
-let mapleader=','
+let mapleader="\<Space>"
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -152,7 +152,7 @@ let g:UltiSnipsMappingsToIgnore = ['autocomplete']
 
 " Emmet
 let g:user_emmet_expandabbr_key = '<Tab>'
-let g:user_emmet_leader_key='<C-e>'
+let g:user_emmet_leader_key='<C-z>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
 
@@ -176,13 +176,5 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap 0 ^
 nnoremap ^ 0
 
-nnoremap <Leader>o :on<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>x :x<CR>
-
-" Disable highlight when <Leader><Space> is pressed
-map <silent> <Leader><Space> :nohlsearch<CR>
-
-" Avoid scrolling extra lines with emmet
-nnoremap <C-e> <nop>
+" Avoid suspending vim with emmet
+nnoremap <C-z> <nop>
