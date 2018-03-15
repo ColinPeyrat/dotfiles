@@ -571,7 +571,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1160 141 650 270 0 0 2048 1129 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>626 442 796 473 0 0 2048 1129 </string>
+	<string>626 484 796 473 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>444 203 1160 726 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -579,7 +579,9 @@
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>430 255 850 466 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>364 121 1260 726 0 0 2048 1129 </string>
+	<string>394 203 1260 726 0 0 2048 1129 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>444 203 1160 726 0 0 2048 1129 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1473,7 +1475,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>115</integer>
+			<integer>125</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -2090,7 +2092,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>EE8E76E4-BD4E-4CD7-93EB-030848460105</string>
 	<key>NoSyncLastTipTime</key>
-	<real>542714354.95337701</real>
+	<real>542800909.46023798</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2108,6 +2110,7 @@
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0006</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
