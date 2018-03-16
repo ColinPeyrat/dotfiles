@@ -50,6 +50,12 @@ snippet afe "arrow function (expression)" i
 (${1}) => ${2}
 endsnippet
 
+snippet m "prototype method" i
+${1:class}.prototype.${2:function} = function(${3:params}) {
+	$0
+};
+endsnippet
+
 # Loop
 
 snippet forin "for in" b
