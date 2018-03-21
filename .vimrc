@@ -1,3 +1,5 @@
+let mapleader="\<Space>"
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -193,9 +195,6 @@ nnoremap <Right> :echoe "Use l"<CR>
 " of the line.
 nnoremap 0 ^
 nnoremap ^ 0
-
-" Map leader to ,
-let mapleader=','
 
 nnoremap <Leader>o :on<CR>
 nnoremap <Leader>q :q<CR>
