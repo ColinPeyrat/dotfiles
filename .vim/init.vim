@@ -26,10 +26,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'lumiliet/vim-twig'
 
 " language
-Plugin 'pangloss/vim-javascript'
-Plugin 'tikhomirov/vim-glsl'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'hail2u/vim-css3-syntax'
+Plugin 'sheerun/vim-polyglot'
 
 " interface
 Plugin 'ctrlpvim/ctrlp.vim'
