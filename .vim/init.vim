@@ -22,7 +22,7 @@ Plugin 'SirVer/ultisnips'
 
 " integration
 Plugin 'w0rp/ale'
-Plugin 'tpope/vim-commentary'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'lumiliet/vim-twig'
 
 " language
@@ -139,6 +139,12 @@ let g:ale_lint_on_text_changed = 'never'
 
 " prettier configuration
 let g:ale_javascript_prettier_options = '--single-quote'
+
+" Prevent tcomment from making a zillion mappings (we just want the operator).
+let g:tcommentMapLeader1=''
+let g:tcommentMapLeader2=''
+let g:tcommentMapLeaderCommentAnyway=''
+let g:tcommentTextObjectInlineComment=''
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
