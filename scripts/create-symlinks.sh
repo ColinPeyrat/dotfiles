@@ -19,6 +19,7 @@ function backup_dotfiles() {
 
 # Create needed folder
 create_folder ~/.backups
+create_folder ~/.terminfo
 
 # Backup old dotfiles 
 backup_dotfiles ~/.vim
@@ -33,8 +34,13 @@ ln -sf ~/.dotfiles/.vim ~/.config/
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tern-config ~
 
-
+# rename for nvim
 mv ~/.config/.vim ~/.config/nvim
+
+# Link terminfo
+ln -sf ~/.dotfiles/terminfo/xterm-256color.terminfo ~/.terminfo
+tic ~/.terminfo/xterm-256color.terminfo
+
 
 echo "Symlinks created"
 

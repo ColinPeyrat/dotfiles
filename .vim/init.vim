@@ -57,6 +57,8 @@ set termguicolors " use guifg/guibg instead of ctermfg/ctermbg in terminal
 let g:base16colorspace=256
 set background=dark
 color base16-tomorrow-night
+highlight Comment gui=italic
+highlight Comment cterm=italic
 
 " Settings
 
