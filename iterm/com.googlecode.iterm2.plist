@@ -516,21 +516,9 @@
 	<true/>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
-	<key>NSFontPanelPreviewHeight</key>
-	<real>100</real>
-	<key>NSFontPanelSizeList</key>
-	<array>
-		<string>14</string>
-		<string>15</string>
-		<string>16</string>
-	</array>
-	<key>NSFontPanelSizeSliderParams</key>
-	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{971, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -569,22 +557,32 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1160 141 650 270 0 0 2048 1129 </string>
+	<string>936 119 540 206 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>626 484 796 473 0 0 2048 1129 </string>
+	<string>501 602 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>444 203 1160 726 0 0 2048 1129 </string>
+	<string>330 227 1260 726 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>575 302 1110 626 0 0 2048 1129 </string>
+	<string>330 227 1260 726 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>430 255 850 466 0 0 2048 1129 </string>
+	<string>455 160 1260 726 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>394 203 1260 726 0 0 2048 1129 </string>
+	<string>455 280 1010 621 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>444 203 1160 726 0 0 2048 1129 </string>
+	<string>455 280 1010 621 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>331 40 1010 622 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>352 17 1010 622 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
+	<integer>0</integer>
+	<key>NeverWarnAboutShortLivedSessions_8C7FF288-F6EE-467D-8611-0DCFDB6B9900</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_8C7FF288-F6EE-467D-8611-0DCFDB6B9900_selection</key>
 	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
@@ -2085,14 +2083,16 @@
 			<string>/Users/colin</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>EE8E76E4-BD4E-4CD7-93EB-030848460105</string>
+	<string>53F32B75-66E1-4E3B-9366-C8284838DBBE</string>
 	<key>NoSyncLastTipTime</key>
-	<real>542800909.46023798</real>
+	<real>543708430.48825896</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2100,7 +2100,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>541333151.33775997</real>
+	<real>525206139.58091003</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -2111,6 +2111,28 @@
 		<string>0004</string>
 		<string>0005</string>
 		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -2162,11 +2184,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=59</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=57</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-15T08:39:51Z</date>
+	<date>2018-03-25T22:07:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
