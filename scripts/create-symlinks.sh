@@ -17,6 +17,9 @@ function backup_dotfiles() {
   fi
 }
 
+# Clean backups
+rm -rf ~/.backups
+
 # Create needed folder
 create_folder ~/.backups
 create_folder ~/.terminfo
