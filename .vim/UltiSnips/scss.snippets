@@ -21,3 +21,18 @@ endsnippet
 snippet trsd "double transition"
 transition: ${1:transform} ${2:0.8}s ${3:$easeOutQuart}, ${4:opacity} $2s $3;
 endsnippet
+
+# Comments
+
+snippet commt "title comment"
+/* ==========================================================================
+   #${1:`!p snip.rv = ''.join(x.upper() for x in re.sub('\.scss$', '', snip.basename).split('_'))`}
+   ========================================================================== */
+$0
+endsnippet
+
+snippet commst "subtitle comment"
+/* ${1:Subtitle}
+   ========================================================================== */
+$0
+endsnippet

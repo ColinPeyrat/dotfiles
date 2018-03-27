@@ -14,10 +14,11 @@ Plugin 'SirVer/ultisnips'
 " integration
 Plugin 'w0rp/ale'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'lumiliet/vim-twig'
+Plugin 'wincent/terminus'
 
 " language
 Plugin 'sheerun/vim-polyglot'
+Plugin 'hail2u/vim-css3-syntax'
 
 " interface
 Plugin 'ctrlpvim/ctrlp.vim'
