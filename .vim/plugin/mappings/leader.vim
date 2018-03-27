@@ -8,8 +8,8 @@ nnoremap <Leader><Leader> <C-^>
 nnoremap <Leader>p :echo expand('%')<CR>
 
 " <Leader>pp -- Like <Leader>p, but additionally yanks the filename and sends it
-" off to Clipper.
-nnoremap <Leader>pp :let @0=expand('%')<CR>
+" off to clipboard.
+nnoremap <Leader>pp :let @+=expand('%')<CR>
 
 " <Leader>r -- Cycle through relativenumber + number, number (only), and no
 " numbering (mnemonic: relative).
