@@ -24,11 +24,11 @@ set foldmethod=indent " not as cool as syntax, but faster
 set foldlevelstart=99 " start unfolded
 
 
-
 set incsearch " find the next match as we type the search
 set hlsearch " highlight searches by default
 set ignorecase " ignore case when searching...
 set smartcase " ...unless we type a capital
+
 
 " Splits
 set splitbelow
@@ -96,4 +96,13 @@ let g:user_emmet_expandabbr_key = '<Tab>'
 let g:user_emmet_leader_key='<C-z>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
+let g:user_emmet_settings = {
+      \  "scss": {
+      \    "snippets": {
+      \      "bgc": "background-color:$${1};",
+      \      "c": "color:$${1};",
+      \      "fs": "font-style:${1};"
+      \    }
+      \  }
+      \}
 
