@@ -14,6 +14,7 @@ set softtabstop=2
 set shiftround " round indent to nearest multiple of 2
 set scrolloff=3 " start scrolling 3 lines before edge of viewport
 set nowrap " no line-wrapping
+set iskeyword+=-
 set nojoinspaces " no extra spaces when joining lines
 set nrformats-=octal " interpret numbers with leading zeroes as decimal, not octal
 set formatoptions+=jroqn1 " auto-format comments
