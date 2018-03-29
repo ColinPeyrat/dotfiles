@@ -17,13 +17,19 @@ set nowrap " no line-wrapping
 set iskeyword+=-
 set nojoinspaces " no extra spaces when joining lines
 set nrformats-=octal " interpret numbers with leading zeroes as decimal, not octal
-set formatoptions+=jroqn1 " auto-format comments
+set formatoptions+=j " remove comment leader when joining comment lines
+set formatoptions+=n " smart auto-indenting inside numbered lists
 
+set noswapfile " don't create root-owned files
+set hidden " allows you to hide buffers with unsaved changes without being prompted
 
 " Folding
 set foldmethod=indent " not as cool as syntax, but faster
 set foldlevelstart=99 " start unfolded
 
+if exists('&inccommand')
+  set inccommand=split " live preview of :s results
+endif
 
 set incsearch " find the next match as we type the search
 set hlsearch " highlight searches by default
@@ -42,7 +48,6 @@ set showcmd " show what commands you’re typing
 set modeline " allow modelines
 set ruler " show current line and column position in file
 set statusline=%f\ %=Line\ %l/%L\ Col\ %c\ (%p%%) " customise our current location information
-set title " show file title in terminal tab
 
 " Absolute numbers on the current line (hybrid numbering)
 set number
