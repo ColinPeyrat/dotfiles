@@ -50,7 +50,7 @@ snippet afe "arrow function (expression)" i
 (${1}) => ${2}
 endsnippet
 
-snippet me "prototype method" i
+snippet me "prototype method" b
 ${1:class}.prototype.${2:function} = function(${3:params}) {
 	$0
 };
@@ -106,7 +106,7 @@ snip.rv = formatVariableName(t[1])
 `} = require('${1}');$0
 endsnippet
 
-snippet me "module.exports" b
+snippet ex "module.exports" b
 module.exports = ${1:`!p 
 snip.rv = ''.join(x for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
 endsnippet
