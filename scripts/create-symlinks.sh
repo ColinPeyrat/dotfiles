@@ -28,6 +28,7 @@ create_folder ~/.terminfo
 backup_dotfiles ~/.vim
 backup_dotfiles ~/.oh-my-zsh/custom
 backup_dotfiles ~/.config/nvim
+backup_dotfiles ~/.tmux.conf
 
 # Creating symlinks
 ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
@@ -36,13 +37,19 @@ ln -sf ~/.dotfiles/.vim ~
 ln -sf ~/.dotfiles/.vim ~/.config/
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tern-config ~
+ln -sf ~/.dotfiles/.tmux.conf ~
 
 # rename for nvim
 mv ~/.config/.vim ~/.config/nvim
 
 # Link terminfo
 ln -sf ~/.dotfiles/terminfo/xterm-256color.terminfo ~/.terminfo
+ln -sf ~/.dotfiles/terminfo/tmux.terminfo ~/.terminfo
+ln -sf ~/.dotfiles/terminfo/tmux-256color.terminfo ~/.terminfo
+
 tic ~/.terminfo/xterm-256color.terminfo
+tic ~/.terminfo/tmux.terminfo
+tic ~/.terminfo/tmux-256color.terminfo
 
 
 echo "Symlinks created"
