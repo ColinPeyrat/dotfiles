@@ -103,6 +103,12 @@ let g:user_emmet_leader_key='<C-z>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,html.twig,css,scss EmmetInstall
 let g:user_emmet_settings = {
+      \  "css": {
+      \    "snippets": {
+      \      "trsde": "transition-delay:${1};",
+      \      "trf:t3": "transform: translate3d(${1});"
+      \    }
+      \  },
       \  "scss": {
       \    "snippets": {
       \      "bgc": "background-color:$${1};",
