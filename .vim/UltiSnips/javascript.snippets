@@ -58,6 +58,13 @@ endsnippet
 
 # Loop
 
+
+snippet for "for" b
+for (${1:var} i = 0; i < ${2:length}; i++) {
+	${0}
+}
+endsnippet
+
 snippet forin "for in" b
 for (${1:var} ${2:key} in ${3:obj}) {
 	${0}
@@ -69,6 +76,7 @@ ${1:array}.forEach((${2:item}) => {
 	${0}
 })
 endsnippet
+
 # Class
 
 snippet cla "class definition" b
@@ -82,6 +90,7 @@ class ${1} extends ${2} {
   ${0}
 }
 endsnippet
+
 # Module
 
 snippet imp "imp" b
