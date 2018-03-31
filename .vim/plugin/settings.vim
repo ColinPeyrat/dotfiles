@@ -41,6 +41,8 @@ set smartcase " ...unless we type a capital
 set splitbelow
 set splitright
 
+set sidescrolloff=3 " same as scrolloff, but for columns
+set smarttab " <tab>/<BS> indent/dedent in leading whitespace
 
 set laststatus=2 " show status line
 set showmode " show what mode you’re currently in
