@@ -56,6 +56,8 @@ set number
 set relativenumber
 set lazyredraw " don't bother updating screen during macro playback
 
+set wildmenu " show file options above the command line
+
 
 " filebrowser
 let g:netrw_banner=0 " disable_banner in filebrowser
@@ -108,7 +110,7 @@ let g:user_emmet_settings = {
       \  "css": {
       \    "snippets": {
       \      "trsde": "transition-delay:${1};",
-      \      "trf:t3": "transform: translate3d(${1});"
+      \      "trf:t3": "transform:translate3d(${1});"
       \    }
       \  },
       \  "scss": {
