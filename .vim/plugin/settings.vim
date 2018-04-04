@@ -19,8 +19,6 @@ set listchars+=extends:» " right-pointing double angle quotation mark (U+00BB, 
 set listchars+=precedes:« " left-pointing double angle quotation mark (U+00AB, UTF-8: C2 AB)
 set listchars+=trail:· " middle dot (U+00B7)
 
-
-
 set shiftround " round indent to nearest multiple of 2
 set scrolloff=3 " start scrolling 3 lines before edge of viewport
 set nowrap " no line-wrapping
@@ -29,6 +27,9 @@ set nojoinspaces " no extra spaces when joining lines
 set nrformats-=octal " interpret numbers with leading zeroes as decimal, not octal
 set formatoptions+=j " remove comment leader when joining comment lines
 set formatoptions+=n " smart auto-indenting inside numbered lists
+
+set guifont=Fira\ Code:h16
+set guioptions-=T " don't show toolbar
 
 set noswapfile " don't create root-owned files
 set hidden " allows you to hide buffers with unsaved changes without being prompted
