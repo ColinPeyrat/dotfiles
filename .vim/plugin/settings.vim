@@ -4,12 +4,22 @@ set autoindent " maintain indent of current line
 set backspace=indent,start,eol " allow unrestricted backspacing in insert mode
 set cursorline " highlight current line
 set showmatch " show matching parens, brackets, etc.
+set clipboard=unnamed " use OS clipboard by default
 
 " 2 spaces please
 set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+
+" Show invisibles
+set list
+set listchars=tab:\ \  " show tab as spaces
+set listchars+=extends:» " right-pointing double angle quotation mark (U+00BB, UTF-8: C2 BB)
+set listchars+=precedes:« " left-pointing double angle quotation mark (U+00AB, UTF-8: C2 AB)
+set listchars+=trail:· " middle dot (U+00B7)
+
+
 
 set shiftround " round indent to nearest multiple of 2
 set scrolloff=3 " start scrolling 3 lines before edge of viewport
@@ -110,7 +120,11 @@ let g:user_emmet_settings = {
       \  "css": {
       \    "snippets": {
       \      "trsde": "transition-delay:${1};",
-      \      "trf:t3": "transform:translate3d(${1});"
+      \      "trf:t": "transform:translate(${1});",
+      \      "trf:tx": "transform:translateX(${1});",
+      \      "trf:ty": "transform:translateY(${1});",
+      \      "trf:t3": "transform:translate3d(${1});",
+      \      "cnt:e": "content:'';"
       \    }
       \  },
       \  "scss": {
