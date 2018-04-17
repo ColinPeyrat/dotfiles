@@ -8,7 +8,6 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-surround'
 Plugin 'SirVer/ultisnips'
 
 " integration
@@ -19,6 +18,10 @@ Plugin 'wincent/terminus'
 " language
 Plugin 'sheerun/vim-polyglot'
 Plugin 'hail2u/vim-css3-syntax'
+
+" commands
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 " interface
 Plugin 'ctrlpvim/ctrlp.vim'
