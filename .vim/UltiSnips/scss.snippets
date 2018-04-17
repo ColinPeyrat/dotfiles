@@ -36,3 +36,19 @@ snippet commst "subtitle comment"
    ========================================================================== */
 $0
 endsnippet
+
+# Control
+
+snippet for "for"
+@for ${1:$i} from ${2:1} through ${3:end} {
+  $0
+}
+endsnippet
+
+snippet forc "for nth-child"
+@for ${1:$i} from ${2:1} through ${3:end} {
+	&:nth-child(#{$1}) {
+		$0
+	}
+}
+endsnippet

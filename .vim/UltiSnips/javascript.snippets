@@ -119,3 +119,13 @@ snippet ex "module.exports" b
 module.exports = ${1:`!p 
 snip.rv = ''.join(x for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
 endsnippet
+
+# GSAP
+
+snippet tween "tween" b
+Tween${1:Max}.${2:to}(${3:elem}, ${4:0.8}, { ${5:vars}, ease: ${6:Quart.easeOut} });
+endsnippet
+
+snippet .to "to" i
+.to(${1:elem}, ${2:0.8}, { ${3:vars }, ease: ${4:Quart.easeOut} })
+endsnippet
