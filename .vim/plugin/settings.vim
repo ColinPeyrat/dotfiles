@@ -68,6 +68,7 @@ set relativenumber
 set lazyredraw " don't bother updating screen during macro playback
 
 set wildmenu " show file options above the command line
+set wildmode=longest:full,full " shell-like autocomplete to unambiguous portion
 
 
 " filebrowser
