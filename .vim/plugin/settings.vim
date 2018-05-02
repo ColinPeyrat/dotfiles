@@ -70,6 +70,7 @@ set lazyredraw " don't bother updating screen during macro playback
 set wildmenu " show file options above the command line
 set wildmode=longest:full,full " shell-like autocomplete to unambiguous portion
 
+" Plugin configuration
 
 " filebrowser
 let g:netrw_banner=0 " disable_banner in filebrowser
@@ -99,6 +100,18 @@ let g:tcommentMapLeader1=''
 let g:tcommentMapLeader2=''
 let g:tcommentMapLeaderCommentAnyway=''
 let g:tcommentTextObjectInlineComment=''
+
+" closetag 
+let g:closetag_filenames = "*.html,*.twig,*.js"
+let g:closetag_close_shortcut = ''
+
+" MatchTagAlways
+let g:mta_filetypes = {
+      \ 'html' : 1,
+      \ 'xml' : 1,
+      \ 'twig' : 1,
+      \ 'javascript': 1,
+      \}
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1

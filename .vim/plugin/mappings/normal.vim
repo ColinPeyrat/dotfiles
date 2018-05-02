@@ -28,3 +28,6 @@ nnoremap ^ 0
 
 " Avoid suspending vim with emmet
 nnoremap <C-z> <nop>
+
+" MatchTagAlways
+nnoremap <leader>% :MtaJumpToOtherTag<cr>

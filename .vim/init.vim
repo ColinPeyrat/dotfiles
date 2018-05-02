@@ -31,6 +31,6 @@ syntax on
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors " use guifg/guibg instead of ctermfg/ctermbg in terminal
 set background=dark
-colorscheme gruvbox
+colorscheme nord
 highlight Comment gui=italic
 highlight Comment cterm=italic
