@@ -1,6 +1,12 @@
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
+" File management
+
+" enhances netrw
+Plugin 'tpope/vim-vinegar'
+
+
 " completion
 Plugin 'shougo/deoplete.nvim'
 Plugin 'carlitux/deoplete-ternjs'
@@ -17,8 +23,6 @@ Plugin 'wincent/terminus'
 " language
 Plugin 'sheerun/vim-polyglot'
 Plugin 'hail2u/vim-css3-syntax'
-" Better Scss highlighting than polyglot
-" Plugin 'tpope/vim-haml'
 " Automatically add a closing HTML tag
 Plugin 'alvan/vim-closetag'
 " Highlight surrounding HTML tags
@@ -38,5 +42,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " theme
+Plugin 'chriskempson/base16-vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'morhetz/gruvbox'
