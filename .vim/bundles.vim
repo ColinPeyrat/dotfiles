@@ -43,5 +43,3 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 " theme
 Plugin 'chriskempson/base16-vim'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'morhetz/gruvbox'
