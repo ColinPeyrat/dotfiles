@@ -17,8 +17,8 @@ Plugin 'SirVer/ultisnips'
 
 " integration
 Plugin 'w0rp/ale'
-Plugin 'tomtom/tcomment_vim'
 Plugin 'wincent/terminus'
+Plugin 'tpope/vim-commentary'
 
 " language
 Plugin 'sheerun/vim-polyglot'

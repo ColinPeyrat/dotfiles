@@ -95,12 +95,6 @@ let g:ale_lint_on_text_changed = 'never'
 " prettier configuration
 let g:ale_javascript_prettier_options = '--single-quote'
 
-" Prevent tcomment from making a zillion mappings (we just want the operator).
-let g:tcommentMapLeader1=''
-let g:tcommentMapLeader2=''
-let g:tcommentMapLeaderCommentAnyway=''
-let g:tcommentTextObjectInlineComment=''
-
 " closetag 
 let g:closetag_filenames = "*.html,*.twig,*.js"
 let g:closetag_close_shortcut = ''
