@@ -1,0 +1,12 @@
+{
+  "async": true,
+  "fetchTimeout": 2500,
+  "libs": [
+    "browser",
+    "ecmascript"
+  ],
+  "plugins": {
+    "es_modules": {},
+    "node": {}
+  }
+}

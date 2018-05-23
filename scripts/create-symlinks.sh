@@ -36,7 +36,7 @@ ln -sf ~/.dotfiles/.zshrc ~
 ln -sf ~/.dotfiles/.vim ~
 ln -sf ~/.dotfiles/.vim ~/.config/
 ln -sf ~/.dotfiles/.vimrc ~
-ln -sf ~/.dotfiles/.tern-config ~
+ln -sf ~/.dotfiles/.tern-project ~
 ln -sf ~/.dotfiles/.tmux.conf ~
 
 # rename for nvim
