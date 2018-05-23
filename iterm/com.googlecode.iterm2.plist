@@ -772,9 +772,21 @@
 	<true/>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
+	<key>NSFontPanelPreviewHeight</key>
+	<real>100</real>
+	<key>NSFontPanelSizeList</key>
+	<array>
+		<string>14</string>
+		<string>15</string>
+		<string>16</string>
+	</array>
+	<key>NSFontPanelSizeSliderParams</key>
+	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/nord-iterm2-0.2.0 2/src/xml</string>
+	<string>~/Code/base16-iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{971, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -813,25 +825,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>936 119 540 206 0 0 1920 1177 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 589 620 392 0 0 1920 1177 </string>
+	<string>1160 141 650 270 0 0 2048 1129 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>496 419 928 394 0 0 1920 1177 </string>
+	<string>626 657 1018 447 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>330 222 1260 732 0 0 1920 1177 </string>
+	<string>0 4 2048 1125 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>960 0 960 1177 0 0 1920 1177 </string>
+	<string>394 198 1260 732 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 4 960 1173 0 0 1920 1177 </string>
+	<string>394 183 1260 732 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>455 280 1010 621 0 0 1920 1177 </string>
+	<string>394 203 1260 726 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>455 280 1010 621 0 0 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>331 40 1010 622 0 0 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 6</key>
-	<string>352 17 1010 622 0 0 1920 1177 </string>
+	<string>444 203 1160 726 0 0 2048 1129 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -2354,16 +2360,14 @@
 			<string>/Users/colin</string>
 		</dict>
 	</array>
-	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
-	<true/>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>53F32B75-66E1-4E3B-9366-C8284838DBBE</string>
+	<string>EE8E76E4-BD4E-4CD7-93EB-030848460105</string>
 	<key>NoSyncLastTipTime</key>
-	<real>547071210.41016304</real>
+	<real>548752906.09248495</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2371,7 +2375,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>525206139.58091003</real>
+	<real>541333151.33775997</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -2404,24 +2408,6 @@
 		<string>0026</string>
 		<string>0027</string>
 		<string>0028</string>
-		<string>0029</string>
-		<string>0030</string>
-		<string>0031</string>
-		<string>0032</string>
-		<string>0033</string>
-		<string>0034</string>
-		<string>0035</string>
-		<string>0036</string>
-		<string>0037</string>
-		<string>0038</string>
-		<string>0039</string>
-		<string>0040</string>
-		<string>0041</string>
-		<string>0042</string>
-		<string>0043</string>
-		<string>0044</string>
-		<string>0045</string>
-		<string>0046</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -2473,11 +2459,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=57</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=59</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-03T20:13:50Z</date>
+	<date>2018-05-23T07:21:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2496,6 +2482,10 @@
 	<integer>9</integer>
 	<key>TabStyle</key>
 	<integer>0</integer>
+	<key>TerminalMargin</key>
+	<integer>10</integer>
+	<key>TerminalVMargin</key>
+	<integer>10</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>Window Arrangements</key>
@@ -2511,7 +2501,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.20180404-nightly</string>
+	<string>3.2.20180403-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
