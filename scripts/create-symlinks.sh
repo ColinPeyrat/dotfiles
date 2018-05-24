@@ -38,6 +38,7 @@ ln -sf ~/.dotfiles/.vim ~/.config/
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tern-project ~
 ln -sf ~/.dotfiles/.tmux.conf ~
+ln -sf ~/.dotfiles/.prettierrc ~
 
 # rename for nvim
 mv ~/.config/.vim ~/.config/nvim
