@@ -19,6 +19,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'w0rp/ale'
 Plugin 'wincent/terminus'
 Plugin 'tpope/vim-commentary'
+Plugin 'mileszs/ack.vim'
 
 " language
 Plugin 'sheerun/vim-polyglot'
