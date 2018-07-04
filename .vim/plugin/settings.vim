@@ -52,6 +52,8 @@ set smartcase " ...unless we type a capital
 set splitbelow
 set splitright
 
+set diffopt+=vertical
+
 set sidescrolloff=3 " same as scrolloff, but for columns
 set smarttab " <tab>/<BS> indent/dedent in leading whitespace
 

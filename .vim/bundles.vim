@@ -20,6 +20,7 @@ Plugin 'w0rp/ale'
 Plugin 'wincent/terminus'
 Plugin 'tpope/vim-commentary'
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
 
 " language
 Plugin 'sheerun/vim-polyglot'

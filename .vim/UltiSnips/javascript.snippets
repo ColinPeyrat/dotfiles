@@ -58,7 +58,6 @@ endsnippet
 
 # Loop
 
-
 snippet for "for" b
 for (${1:var} i = 0; i < ${2:length}; i++) {
 	${0}
@@ -122,10 +121,26 @@ endsnippet
 
 # GSAP
 
-snippet tween "tween" b
-Tween${1:Max}.${2:to}(${3:elem}, ${4:0.8}, { ${5:vars}, ease: ${6:Quart.easeOut} });
+snippet twm "TweenMax" b
+TweenMax
 endsnippet
 
-snippet .to "to" i
-.to(${1:elem}, ${2:0.8}, { ${3:vars }, ease: ${4:Quart.easeOut} })
+snippet tlm "TimelineMax" i
+TimelineMax
+endsnippet
+
+snippet twmt "TweenMax.to()" b
+TweenMax.to(${1:elem}, ${2:0.8}, { ${3:vars });
+endsnippet
+
+snippet twms "TweenMax.set()" b
+TweenMax.set(${1:elem}, { ${2:vars} });
+endsnippet
+
+snippet .to ".to()" i
+.to(${1:elem}, ${2:0.8}, { ${3:vars} })
+endsnippet
+
+snippet .set ".set()" i
+.set(${1:elem}, { ${2:vars} })
 endsnippet
