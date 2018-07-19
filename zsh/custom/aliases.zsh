@@ -2,7 +2,6 @@
 # Command aliases
 #
 
-alias t=tmux
 alias v=vim
 
 if command -v nvim &> /dev/null; then
