@@ -1,4 +1,5 @@
 {
+  "ecmaVersion": 6,
   "async": true,
   "fetchTimeout": 2500,
   "libs": [
