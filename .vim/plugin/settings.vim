@@ -78,10 +78,7 @@ set wildmode=longest:full,full " shell-like autocomplete to unambiguous portion
 let g:netrw_banner=0 " disable_banner in filebrowser
 
 " CtrlP
-let g:ctrlp_custom_ignore = {
-      \ 'dir':'\v[\/](node_modules|www|vendor)|(\.(git))$',
-      \ 'file': '\v\.(DS_Store)$',
-      \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_show_hidden = 1
 
 " ALE config
@@ -104,11 +101,16 @@ let g:mta_filetypes = {
       \ 'html' : 1,
       \ 'xml' : 1,
       \ 'twig' : 1,
-      \ 'javascript': 1,
+      \ 'javascript': 1
       \}
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#filetypes = [
+      \ 'js',
+      \ 'vue'
+      \ ]
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir = "~/.dotfiles/.vim/UltiSnips/"
@@ -142,9 +144,12 @@ let g:user_emmet_settings = {
       \      "c": "color:$${1};",
       \      "fs": "font-style:${1};"
       \    }
+      \  },
+      \  'vue' : {
+      \      'extends' : 'css'
       \  }
       \}
 
 " Vue
-let g:vue_disable_pre_processors = 1
+" let g:vue_disable_pre_processors = 1
 
