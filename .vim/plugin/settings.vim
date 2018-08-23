@@ -86,14 +86,13 @@ let g:ale_fixers = {
       \   'javascript': ['prettier'],
       \   'json': ['prettier'],
       \   'scss': ['prettier'],
-      \   'vue': ['prettier'],
       \}
 
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 
 " closetag 
-let g:closetag_filenames = "*.html,*.twig,*.js,*.vue"
+let g:closetag_filenames = "*.html,*.twig,*.js"
 let g:closetag_close_shortcut = ''
 
 " MatchTagAlways
@@ -109,7 +108,6 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#filetypes = [
       \ 'js',
-      \ 'vue'
       \ ]
 
 " UltiSnips
@@ -124,9 +122,8 @@ let g:UltiSnipsMappingsToIgnore = ['autocomplete']
 
 " Emmet
 let g:user_emmet_expandabbr_key = '<Tab>'
-let g:user_emmet_leader_key='<C-z>'
 let g:user_emmet_install_global = 0
-autocmd FileType html,html.twig,css,scss,vue EmmetInstall
+autocmd FileType html,html.twig,css,scss EmmetInstall
 let g:user_emmet_settings = {
       \  "css": {
       \    "snippets": {
@@ -145,11 +142,5 @@ let g:user_emmet_settings = {
       \      "fs": "font-style:${1};"
       \    }
       \  },
-      \  'vue' : {
-      \      'extends' : 'css'
-      \  }
       \}
-
-" Vue
-" let g:vue_disable_pre_processors = 1
 
