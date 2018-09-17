@@ -18,7 +18,7 @@ snippet ae "addEventListener" b
 ${1:document}.addEventListener('${2:event}', ${3:function})
 endsnippet
 
-# Flow
+# Condition
 
 snippet if "if" b
 if (${1:condition}) {
@@ -121,20 +121,24 @@ endsnippet
 
 # GSAP
 
-snippet twm "TweenMax" b
+snippet tw "TweenMax" b
 TweenMax
 endsnippet
 
-snippet tlm "TimelineMax" i
+snippet tl "TimelineMax" i
 TimelineMax
 endsnippet
 
-snippet twmt "TweenMax.to()" b
+snippet twt "TweenMax.to()" b
 TweenMax.to(${1:elem}, ${2:0.8}, { ${3:vars });
 endsnippet
 
-snippet twms "TweenMax.set()" b
+snippet tws "TweenMax.set()" b
 TweenMax.set(${1:elem}, { ${2:vars} });
+endsnippet
+
+snippet twdc "TweenMax.delayedCall()" b
+TweenMax.delayedCall(${1:0.8}, ${2:function}, [], this);
 endsnippet
 
 snippet .to ".to()" i
