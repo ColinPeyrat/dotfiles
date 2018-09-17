@@ -31,6 +31,7 @@ syntax on
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors " use guifg/guibg instead of ctermfg/ctermbg in terminal
 let base16colorspace=256  " Access colors present in 256 colorspace
+set background=dark
 colorscheme base16-ocean
 
 highlight Comment gui=italic
