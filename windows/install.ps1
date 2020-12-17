@@ -1,8 +1,5 @@
 # Windows 10 Setup Script
-# Run this script in PowerShell
-
-# Self elevate administrative permissions in this script
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
+# Run this script in PowerShell as administrator
 
 function Check-Command($cmdname) {
   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
