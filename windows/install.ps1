@@ -24,4 +24,4 @@ Write-Host "Installing Apps via chocolatey package manager..." -ForegroundColor 
 choco install vscode -y
 choco install firacode -y
 choco install microsoft-windows-terminal -y
-choco install autohotkey
+choco install autohotkey -y
