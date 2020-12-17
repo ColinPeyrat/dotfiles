@@ -1,76 +1,23 @@
 # dotfiles
 
-## install
+## Overview
 
-Run this:
+Things I use :
+- [Chocolatey](https://chocolatey.org/)
+- [WSL1](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10) (since WSL2 need to enable Hyper-V which broke most of others VM).
+- [Windows Terminal](https://github.com/microsoft/terminal)
+- [Visual Studio Code](https://github.com/microsoft/vscode)
 
-```bash
-git clone --clone https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
-sh ./setup.sh
-```
+## Setup
 
-## iterm
+### Windows
 
-### install
-
-```bash
-brew cask install iterm2
-```
-
-follow this [link](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/) to setup iterm from custom URL
-
-### theme
-
-i use [Tomorrow Night](https://github.com/martinlindhe/base16-iterm2) from [Base16](https://github.com/chriskempson/base16)
-
-## zsh
-
-### install
+Open a PowerShell terminal and run this :
 
 ```bash
-brew install zsh
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.github.com/colinpeyrat/dotfiles/master/windows/install.ps1')))
 ```
 
-### theme
+### WSL
 
-i use [pure](https://github.com/sindresorhus/pure)
-
-```bash
-npm install --global pure-prompt
-```
-
-## vim
-
-i use neovim
-
-```bash
-brew install neovim
-
-# install latest python package version
-pip install setuptools
-pip  install --upgrade neovim
-pip2 install --upgrade neovim
-pip3 install --upgrade neovim
-```
-
-then open vim and run this:
-
-```bash
-:source %
-:PluginInstall
-```
-
-with [deoplete-ternjs](https://github.com/carlitux/deoplete-ternjs) you need to install tern globally
-
-```bash
-npm install -g tern
-```
-
-finally, you will need to setup tern
-
-```bash
-cd ~/.vim/bundle/tern_for_vim
-npm install
-```
-
-you will also want to configure tern for specific project. Follow this [link](https://stackoverflow.com/questions/41371789/figuring-out-javascript-libraries-for-vim-autocompletion-with-ternjs-in-tern-pr/41377689#41377689)
+First, [install WSL](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10).
