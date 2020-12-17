@@ -12,7 +12,7 @@ Things I use :
 
 ### Windows
 
-Open a PowerShell terminal and run this :
+Open a PowerShell terminal as administrator (Right click on start > Windows PowerShell (admin) and run this :
 
 ```bash
 powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/ColinPeyrat/dotfiles/master/windows/install.ps1')))"
