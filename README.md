@@ -22,6 +22,6 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointM
 
 First, [install WSL](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10).
 
-### Windows terminal
+## Windows terminal
 
 I use [Base 16 Nord](https://github.com/wuqs-net/base16-windows-terminal/blob/master/colors/base16-nord.json) theme from [Base16](https://github.com/chriskempson/base16)
