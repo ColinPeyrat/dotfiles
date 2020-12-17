@@ -15,7 +15,7 @@ Things I use :
 Open a PowerShell terminal and run this :
 
 ```bash
-powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/ColinPeyrat/dotfiles/windows/windows/install.ps1')))
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/ColinPeyrat/dotfiles/windows/install.ps1')))
 ```
 
 ### WSL
