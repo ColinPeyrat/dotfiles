@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sh ./scripts/install.sh
-sh ./scripts/create-symlinks.sh
+./scripts/linux/install.sh
+./scripts/linux/create-symlinks.sh
 
 zsh -c 'source ~/.zshrc'
 

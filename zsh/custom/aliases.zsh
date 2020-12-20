@@ -1,10 +1,4 @@
 #
 # Command aliases
+# eg: alias v=vim
 #
-
-alias v=vim
-
-if command -v nvim &> /dev/null; then
-  alias vim=nvim # Use `\vim` or `command vim` to get the real vim.
-fi
-

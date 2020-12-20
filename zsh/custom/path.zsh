@@ -1,4 +1,4 @@
-export PATH="~/.pyenv:$PATH"
-
-eval "$(pyenv init -)"
-
+#
+# PATH environment variable
+# eg: export PATH=${PATH}:${HOME}/bin
+#
