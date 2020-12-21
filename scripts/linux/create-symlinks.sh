@@ -13,9 +13,15 @@ symlink() {
 }
 
 duplicate_example() {
+  file="$1"
   filePath=$(realpath "dots/$1")
-  if [ ! -e "$HOME/$1" ]; then
-    cp $filePath "$HOME/$1"
+
+  # remove ".example" in file name
+  # eg: .gitconfig.local.example -> .gitconfig.local
+  formatedName=${file//.example}
+
+  if [ ! -e "$HOME/$formatedName" ]; then
+    cp $filePath "$HOME/$formatedName"
   fi
 }
 
@@ -29,7 +35,7 @@ for dotfile in ${dots[*]}; do
   symlink "$dotfile"
 done
 
-# duplicate local files
+# duplicate local files and rename it
 examples=(
   .gitconfig.local.example
 )

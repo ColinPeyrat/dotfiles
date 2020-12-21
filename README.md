@@ -38,8 +38,7 @@ cd ~/.dotfiles && ./scripts/linux/setup.sh
 
 ## Post-installation steps
 
-1. Replace with personal data to `~/.gitconfig.local.example`
-2. Rename it : `mv ~/.gitconfig.local.example ~/.gitconfig.local`
+1. Replace data inside `~/.gitconfig.local` with personal data
 
 ## Setting up Windows Terminal
 
