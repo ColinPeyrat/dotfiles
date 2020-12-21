@@ -1,5 +1,7 @@
 # dotfiles
 
+![](https://raw.githubusercontent.com/ColinPeyrat/dotfiles/media/screenshot.png)
+
 - target plateforms: Windows 10
 
 ## Overview
