@@ -22,7 +22,7 @@ Things I use :
 2. Run this :
 
 ```bash
-powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/ColinPeyrat/dotfiles/master/scripts/windows/setup.ps1')))"
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/ColinPeyrat/dotfiles/master/setup-windows.ps1')))"
 ```
 
 ### WSL
@@ -33,7 +33,7 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointM
 
 ```bash
 git clone --recurse-submodules https://github.com/ColinPeyrat/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles && ./scripts/linux/setup.sh
+cd ~/.dotfiles && ./setup-linux.sh
 ```
 
 ## Post-installation steps
