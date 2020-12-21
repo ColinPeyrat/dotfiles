@@ -11,7 +11,7 @@ Things I use :
 - [AutoHotKey](https://www.autohotkey.com/): to create custom keybind and macro
 - Ocean Dark from [Base16](http://chriskempson.com/projects/base16/): my theme for both [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AndrsDC.base16-themes) and [Windows Terminal](https://github.com/jonasnordlund/base16-windows-terminal)
 - [WSL1](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10): a GNU/Linux environment directly on Window (since WSL2 needs Hyper-V enabled, which breaks most other VMs).
-- [Windows Terminal](https://github.com/microsoft/terminal): my terminal with oh-my-zsh
+- [Windows Terminal](https://github.com/microsoft/terminal): my terminal with oh-my-zsh as my shell
 - [nvm](https://github.com/nvm-sh/nvm): to manage node versions
 
 ## Installation

@@ -3,3 +3,7 @@
 
 [include]
   path = ~/.gitconfig.local
+
+[core]
+	autocrlf = input
+	eol = lf
