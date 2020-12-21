@@ -43,7 +43,7 @@ cd ~/.dotfiles && ./setup-linux.sh
 ## Setting up Windows Terminal
 
 1. Open settings `ctrl+,`
-2. Replace the whole file with windows-terminal/settings.json
+2. Replace the whole file with [windows-terminal/settings.json](https://raw.githubusercontent.com/ColinPeyrat/dotfiles/master/windows-terminal/settings.json)
 
 ## Setting up AutoHotKeys scripts
 
