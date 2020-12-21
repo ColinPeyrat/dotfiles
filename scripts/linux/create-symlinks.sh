@@ -25,6 +25,8 @@ duplicate_example() {
   fi
 }
 
+echo "Creating symlinks..."
+
 # creating symlinks
 dots=(
   .gitconfig
@@ -47,4 +49,4 @@ done
 # specific symlinks
 ln -sf ~/.dotfiles/zsh/custom ~/.oh-my-zsh
 
-echo "Symlinks created"
+echo "Symlinks created !"
