@@ -14,4 +14,7 @@ plugins=(git npm zsh-nvm zsh-autosuggestions zsh-syntax-highlighting)
 # see https://github.com/sindresorhus/pure#manually
 fpath+=$HOME/.zsh/pure
 
+# rbenv
+eval "$(rbenv init -)"
+
 source $ZSH/oh-my-zsh.sh

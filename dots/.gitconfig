@@ -7,3 +7,5 @@
 [core]
 	autocrlf = input
 	eol = lf
+[user]
+	email = colinpeyrat@gmail.com
